@@ -2,12 +2,24 @@ PODS:
   - JSQMessagesViewController (7.2.0):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
+  - Riffle (0.2.41)
 
 DEPENDENCIES:
   - JSQMessagesViewController
+  - Riffle (from `https://github.com/exis-io/swiftRiffleCocoapod`)
+
+EXTERNAL SOURCES:
+  Riffle:
+    :git: https://github.com/exis-io/swiftRiffleCocoapod
+
+CHECKOUT OPTIONS:
+  Riffle:
+    :commit: 070da7b0b26813024efffbb4295bb0c58c0b395a
+    :git: https://github.com/exis-io/swiftRiffleCocoapod
 
 SPEC CHECKSUMS:
   JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Riffle: 959c7d957feb3ea8b0f53016944be679a1295551
 
 COCOAPODS: 0.39.0
