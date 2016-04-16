@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6551A01CC29D7E0084D5F9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C65519E1CC29D7E0084D5F9 /* Interface.storyboard */; };
+		8C6551A21CC29D7E0084D5F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6551A11CC29D7E0084D5F9 /* Assets.xcassets */; };
+		8C6551A91CC29D7F0084D5F9 /* XSwatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C6551A81CC29D7F0084D5F9 /* XSwatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C6551AE1CC29D7F0084D5F9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6551AD1CC29D7F0084D5F9 /* InterfaceController.swift */; };
+		8C6551B01CC29D7F0084D5F9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6551AF1CC29D7F0084D5F9 /* ExtensionDelegate.swift */; };
+		8C6551B21CC29D7F0084D5F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6551B11CC29D7F0084D5F9 /* Assets.xcassets */; };
+		8C6551B61CC29D7F0084D5F9 /* XSwatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8C65519C1CC29D7E0084D5F9 /* XSwatch.app */; };
 		8C8A197B1CB450A000C94963 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A197A1CB450A000C94963 /* LocationManager.swift */; };
 		8CD002111CB2F49A00B39D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD002101CB2F49A00B39D2D /* AppDelegate.swift */; };
 		8CD002131CB2F49A00B39D2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD002121CB2F49A00B39D2D /* ViewController.swift */; };
@@ -18,8 +25,59 @@
 		A24063AEDA4321DCFE2FD988 /* Pods_ExisChatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB0BDBE4013F3A6980FDD6F /* Pods_ExisChatSwift.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8C6551AA1CC29D7F0084D5F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CD002051CB2F49A00B39D2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C6551A71CC29D7F0084D5F9;
+			remoteInfo = "XSwatch Extension";
+		};
+		8C6551B41CC29D7F0084D5F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CD002051CB2F49A00B39D2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C65519B1CC29D7E0084D5F9;
+			remoteInfo = XSwatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C6551BC1CC29D7F0084D5F9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8C6551A91CC29D7F0084D5F9 /* XSwatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6551BE1CC29D7F0084D5F9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8C6551B61CC29D7F0084D5F9 /* XSwatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6CB0BDBE4013F3A6980FDD6F /* Pods_ExisChatSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExisChatSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C65519C1CC29D7E0084D5F9 /* XSwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C65519F1CC29D7E0084D5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8C6551A11CC29D7E0084D5F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C6551A31CC29D7E0084D5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6551A81CC29D7F0084D5F9 /* XSwatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "XSwatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6551AD1CC29D7F0084D5F9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8C6551AF1CC29D7F0084D5F9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8C6551B11CC29D7F0084D5F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C6551B31CC29D7F0084D5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C8A197A1CB450A000C94963 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		8CD0020D1CB2F49A00B39D2D /* ExisChatSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExisChatSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD002101CB2F49A00B39D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +93,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8C6551A51CC29D7F0084D5F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CD0020A1CB2F49A00B39D2D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,10 +111,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C65519D1CC29D7E0084D5F9 /* XSwatch */ = {
+			isa = PBXGroup;
+			children = (
+				8C65519E1CC29D7E0084D5F9 /* Interface.storyboard */,
+				8C6551A11CC29D7E0084D5F9 /* Assets.xcassets */,
+				8C6551A31CC29D7E0084D5F9 /* Info.plist */,
+			);
+			path = XSwatch;
+			sourceTree = "<group>";
+		};
+		8C6551AC1CC29D7F0084D5F9 /* XSwatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8C6551AD1CC29D7F0084D5F9 /* InterfaceController.swift */,
+				8C6551AF1CC29D7F0084D5F9 /* ExtensionDelegate.swift */,
+				8C6551B11CC29D7F0084D5F9 /* Assets.xcassets */,
+				8C6551B31CC29D7F0084D5F9 /* Info.plist */,
+			);
+			path = "XSwatch Extension";
+			sourceTree = "<group>";
+		};
 		8CD002041CB2F49A00B39D2D = {
 			isa = PBXGroup;
 			children = (
 				8CD0020F1CB2F49A00B39D2D /* ExisChatSwift */,
+				8C65519D1CC29D7E0084D5F9 /* XSwatch */,
+				8C6551AC1CC29D7F0084D5F9 /* XSwatch Extension */,
 				8CD0020E1CB2F49A00B39D2D /* Products */,
 				C4773765EC82641912D2E11B /* Pods */,
 				D62F91E99FE306CF35DF3304 /* Frameworks */,
@@ -60,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				8CD0020D1CB2F49A00B39D2D /* ExisChatSwift.app */,
+				8C65519C1CC29D7E0084D5F9 /* XSwatch.app */,
+				8C6551A81CC29D7F0084D5F9 /* XSwatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +190,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8C65519B1CC29D7E0084D5F9 /* XSwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6551BD1CC29D7F0084D5F9 /* Build configuration list for PBXNativeTarget "XSwatch" */;
+			buildPhases = (
+				8C65519A1CC29D7E0084D5F9 /* Resources */,
+				8C6551BC1CC29D7F0084D5F9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C6551AB1CC29D7F0084D5F9 /* PBXTargetDependency */,
+			);
+			name = XSwatch;
+			productName = XSwatch;
+			productReference = 8C65519C1CC29D7E0084D5F9 /* XSwatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8C6551A71CC29D7F0084D5F9 /* XSwatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6551BB1CC29D7F0084D5F9 /* Build configuration list for PBXNativeTarget "XSwatch Extension" */;
+			buildPhases = (
+				8C6551A41CC29D7F0084D5F9 /* Sources */,
+				8C6551A51CC29D7F0084D5F9 /* Frameworks */,
+				8C6551A61CC29D7F0084D5F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XSwatch Extension";
+			productName = "XSwatch Extension";
+			productReference = 8C6551A81CC29D7F0084D5F9 /* XSwatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		8CD0020C1CB2F49A00B39D2D /* ExisChatSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CD002221CB2F49A00B39D2D /* Build configuration list for PBXNativeTarget "ExisChatSwift" */;
@@ -110,10 +234,12 @@
 				8CD0020B1CB2F49A00B39D2D /* Resources */,
 				336AC808D9C60869C1ECA9B7 /* Embed Pods Frameworks */,
 				C8D62E9CE21005347B701000 /* Copy Pods Resources */,
+				8C6551BE1CC29D7F0084D5F9 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8C6551B51CC29D7F0084D5F9 /* PBXTargetDependency */,
 			);
 			name = ExisChatSwift;
 			productName = ExisChatSwift;
@@ -130,6 +256,12 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Exis;
 				TargetAttributes = {
+					8C65519B1CC29D7E0084D5F9 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8C6551A71CC29D7F0084D5F9 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					8CD0020C1CB2F49A00B39D2D = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -149,11 +281,30 @@
 			projectRoot = "";
 			targets = (
 				8CD0020C1CB2F49A00B39D2D /* ExisChatSwift */,
+				8C65519B1CC29D7E0084D5F9 /* XSwatch */,
+				8C6551A71CC29D7F0084D5F9 /* XSwatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8C65519A1CC29D7E0084D5F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6551A21CC29D7E0084D5F9 /* Assets.xcassets in Resources */,
+				8C6551A01CC29D7E0084D5F9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6551A61CC29D7F0084D5F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6551B21CC29D7F0084D5F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CD0020B1CB2F49A00B39D2D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +367,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8C6551A41CC29D7F0084D5F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6551B01CC29D7F0084D5F9 /* ExtensionDelegate.swift in Sources */,
+				8C6551AE1CC29D7F0084D5F9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CD002091CB2F49A00B39D2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,7 +389,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8C6551AB1CC29D7F0084D5F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C6551A71CC29D7F0084D5F9 /* XSwatch Extension */;
+			targetProxy = 8C6551AA1CC29D7F0084D5F9 /* PBXContainerItemProxy */;
+		};
+		8C6551B51CC29D7F0084D5F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C65519B1CC29D7E0084D5F9 /* XSwatch */;
+			targetProxy = 8C6551B41CC29D7F0084D5F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		8C65519E1CC29D7E0084D5F9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C65519F1CC29D7E0084D5F9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		8CD002141CB2F49A00B39D2D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -249,6 +430,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8C6551B71CC29D7F0084D5F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = XSwatch_Extension;
+				INFOPLIST_FILE = XSwatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Exis.ExisChatSwift.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8C6551B81CC29D7F0084D5F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = XSwatch_Extension;
+				INFOPLIST_FILE = XSwatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Exis.ExisChatSwift.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		8C6551B91CC29D7F0084D5F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "XSwatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Exis.ExisChatSwift.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8C6551BA1CC29D7F0084D5F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "XSwatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Exis.ExisChatSwift.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		8CD002201CB2F49A00B39D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -359,6 +600,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C6551BB1CC29D7F0084D5F9 /* Build configuration list for PBXNativeTarget "XSwatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6551B91CC29D7F0084D5F9 /* Debug */,
+				8C6551BA1CC29D7F0084D5F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8C6551BD1CC29D7F0084D5F9 /* Build configuration list for PBXNativeTarget "XSwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6551B71CC29D7F0084D5F9 /* Debug */,
+				8C6551B81CC29D7F0084D5F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8CD002081CB2F49A00B39D2D /* Build configuration list for PBXProject "ExisChatSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
