@@ -8,16 +8,55 @@
 
 import UIKit
 import CoreData
+import WatchConnectivity
+import Riffle
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Delegate {
 
     var window: UIWindow?
 
+    var app: Domain!
+    var me: Domain!
+
+    var msg: String?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if WCSession.isSupported() {
+            let session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+        }
         return true
+    }
+    func session(_ session: WCSession,
+                   didReceiveMessage message: [String : AnyObject],
+                                     replyHandler replyHandler: ([String : AnyObject]) -> Void){
+        //do something according to the message dictionary
+        self.msg = (message["msg"] as! String)
+
+        //Change USERNAME to your username that you used to sign up with at my.exis.io
+        app = Domain(name: Config().Domain)
+
+        //Set up your domain
+        me = Domain(name: "localagent", superdomain: app)
+
+        me.delegate = self
+
+        replyHandler(["response": "Got your message"])
+        //Joining container with your token
+        //Copy from: Auth() -> Authorized Key Management -> 'localagent' key
+//        me.setToken(Config().Token)
+        me.join()
+    }
+
+    func onJoin(){
+        app.publish("chat", msg)
+    }
+
+    func onLeave() {
+        print("Left")
     }
 
     func applicationWillResignActive(application: UIApplication) {

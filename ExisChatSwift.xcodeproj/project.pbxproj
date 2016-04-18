@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2EED241CC523B100BE4928 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EED231CC523B100BE4928 /* Config.swift */; };
 		8C6551A01CC29D7E0084D5F9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C65519E1CC29D7E0084D5F9 /* Interface.storyboard */; };
 		8C6551A21CC29D7E0084D5F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6551A11CC29D7E0084D5F9 /* Assets.xcassets */; };
 		8C6551A91CC29D7F0084D5F9 /* XSwatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C6551A81CC29D7F0084D5F9 /* XSwatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		6CB0BDBE4013F3A6980FDD6F /* Pods_ExisChatSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExisChatSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2EED231CC523B100BE4928 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		8C65519C1CC29D7E0084D5F9 /* XSwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C65519F1CC29D7E0084D5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8C6551A11CC29D7E0084D5F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				8CF1CF441CB30D4000779C57 /* exis-logo.png */,
 				8CD002101CB2F49A00B39D2D /* AppDelegate.swift */,
+				8C2EED231CC523B100BE4928 /* Config.swift */,
 				8CD002121CB2F49A00B39D2D /* ViewController.swift */,
 				8C8A197A1CB450A000C94963 /* LocationManager.swift */,
 				8CD002141CB2F49A00B39D2D /* Main.storyboard */,
@@ -382,6 +385,7 @@
 			files = (
 				8C8A197B1CB450A000C94963 /* LocationManager.swift in Sources */,
 				8CD002131CB2F49A00B39D2D /* ViewController.swift in Sources */,
+				8C2EED241CC523B100BE4928 /* Config.swift in Sources */,
 				8CD002191CB2F49A00B39D2D /* ExisChatSwift.xcdatamodeld in Sources */,
 				8CD002111CB2F49A00B39D2D /* AppDelegate.swift in Sources */,
 			);
@@ -607,6 +611,7 @@
 				8C6551BA1CC29D7F0084D5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C6551BD1CC29D7F0084D5F9 /* Build configuration list for PBXNativeTarget "XSwatch" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +620,7 @@
 				8C6551B81CC29D7F0084D5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CD002081CB2F49A00B39D2D /* Build configuration list for PBXProject "ExisChatSwift" */ = {
 			isa = XCConfigurationList;

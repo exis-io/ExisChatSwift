@@ -10,7 +10,7 @@ import UIKit
 import Riffle
 import JSQMessagesViewController
 
-class ChatViewController: JSQMessagesViewController {
+class ChatViewController: JSQMessagesViewController, Delegate {
 
     var messages = [JSQMessage]()
 
@@ -27,22 +27,32 @@ class ChatViewController: JSQMessagesViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Riffle.setFabricLocal()
         setup()
 
         //Set up your app
         //Change USERNAME to your username that you used to sign up with at my.exis.io
-        app = Domain(name: "xs.demo.USERNAME.swiftchat")
+        app = Domain(name: Config().Domain)
 
         //Set up your domain
         me = Domain(name: "localagent", superdomain: app)
 
+        me.delegate = self
         //Joining container with your token
         //Copy from: Auth() -> Authorized Key Management -> 'localagent' key
-//        me.setToken("XXXXXX")
+//        me.setToken(Config().Token)
         me.join()
 
         //Listen for people sending messages!
         app.subscribe("chat", gotMsg)
+    }
+
+    func onJoin(){
+        print("Joined the chat")
+    }
+
+    func onLeave() {
+        print("Left the chat")
     }
 
     func gotMsg(message: String){
