@@ -10,5 +10,5 @@ import Foundation
 
 class Config{
     var Domain = "xs.demo.USERNAME.swiftchat"
-    var Token = "XXXXXX"
+    var Token = "XXXXX"
 }

@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="XSwatch" customModuleProvider="target">
                     <items>
-                        <imageView width="136" height="110" alignment="left" image="exis-logo" animationDuration="1" id="40E-Wv-Xyh"/>
+                        <imageView width="136" height="110" alignment="center" image="exis-logo" animationDuration="1" id="40E-Wv-Xyh"/>
                         <button width="1" alignment="left" title="Send XSChat" id="Vhl-FF-2ON">
                             <connections>
                                 <action selector="displayTextInput" destination="AgC-eL-Hgc" id="Pqf-zs-ggF"/>
