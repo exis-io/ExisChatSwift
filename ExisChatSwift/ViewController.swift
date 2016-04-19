@@ -27,7 +27,6 @@ class ChatViewController: JSQMessagesViewController, Delegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Riffle.setFabricLocal()
         setup()
 
         //Set up your app
@@ -40,7 +39,7 @@ class ChatViewController: JSQMessagesViewController, Delegate {
         me.delegate = self
         //Joining container with your token
         //Copy from: Auth() -> Authorized Key Management -> 'localagent' key
-//        me.setToken(Config().Token)
+        me.setToken(Config().Token)
         me.join()
 
         //Listen for people sending messages!

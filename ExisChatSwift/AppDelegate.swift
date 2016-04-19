@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Delega
         replyHandler(["response": "Got your message"])
         //Joining container with your token
         //Copy from: Auth() -> Authorized Key Management -> 'localagent' key
-//        me.setToken(Config().Token)
+        me.setToken(Config().Token)
         me.join()
     }
 
